@@ -1,11 +1,31 @@
-div {
-  border: 20px solid #000; /* this is short hand for setting
-                            the border's width, its type, and color */
-  display: inline-block; /* a way of positioning elements */
-  min-width: 20em; /* the two min styles make the shape */
-  min-height: 25em; /* of the divs oblong*/
-  border-radius: 50%; /* this makes the normally square div round */
-  border-left-color: transparent; /* these remove the color from the left side */
-  border-right-color: transparent; /* the right side */
-  border-bottom-color: transparent; /* and the bottom of the circle */
+*{
+  margin: -1px;
+  padding: 0;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(246, 245, 245);
+  border-radius: 50%;
+  box-shadow: 0 0 0 20px red,
+              0 0 0 40px orange,
+              0 0 0 60px yellow,
+              0 0 0 80px green,
+              0 0 0 100px blue,
+              0 0 0 120px indigo,
+              0 0 0 140px purple;
+}
+.circle2 {
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
 }
